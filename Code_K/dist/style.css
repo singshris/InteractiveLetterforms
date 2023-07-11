@@ -1,0 +1,75 @@
+:root{
+  --width: 300px;
+  --height: 600px;
+}
+
+body{
+  background: #e7d0fb;
+}
+
+.letter{
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+  flex-wrap: wrap;
+ 
+  
+
+/*   border: 1px solid red; */
+  
+/*   centering it on the page */
+  position:fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.letter > div{
+  width: calc(var(--width)/7.5);
+  height: calc(var(--height)/10);
+  transition: 0.1s;
+  transform: scale(1) rotate(30deg); 
+/* margin-right: 8px; */
+/*  border-radius: 100%; */
+/*   outline: 1px solid black; */
+}
+
+/* Add a fill to the pieces that have the class "fill" */
+.fill{
+  background: #610FA9;
+
+/*     #00272b; */
+}
+
+
+/* —————————————————————————— */
+/*         TRANSITIONS        */
+/* —————————————————————————— */
+
+/* —————————————————————————— */
+/* UNIT TRANSITION */
+
+
+
+
+ .letter > .fill:hover{
+  background: #e7d0fb;
+  border: 50px solid black;
+  border-color: #610FA9;
+/*
+  transform: scale(0.5) rotate(-90deg);
+  transition: 0s; */
+/*   background: #A246DD; */
+} 
+
+/* —————————————————————————— */
+/* LETTER TRANSITION  / NESTED HOVERING */
+
+.letter:hover div{
+
+    transform: scale(1) rotate(-30deg);
+/*   transform: scale(0.3) 
+
+}
+
+/* —————————————————————————— */

@@ -1,0 +1,69 @@
+body{
+  background: #e7d0fb;
+  cursor: pointer;
+}
+
+.container{
+  position:fixed;
+  width:800px;
+  height:800px;
+/*   border: 1px solid red; */
+    
+/*  CENTER ON PAGE */
+  position: fixed;
+  top:50vh;
+  left:50vw;
+  transform:translate(-50%, -50%);
+}
+
+.strip{
+  width: 200px;
+  height: 800px;
+  position:absolute;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.w1{ 
+  left: 15%;
+/*   transform: rotate(-1deg); */
+  background: #610FA9;
+}
+.w2{ 
+  left: 85%;
+/*   transform: rotate(1deg); */
+  background: #610FA9;
+}
+.w3{ 
+  left: 85%;
+  transform: rotate(2deg);
+  background: #9700F5;
+}
+.w4{ 
+  left: 15%;
+  transform: rotate(2deg);
+  background: #9700F5;
+}
+.i2{ 
+  left: 50%;
+
+
+  background: #610FA9;
+  transform: rotate(-40.71deg);
+}
+
+.i{ 
+
+  left: 50%;
+
+  background: #9700F5;
+  transform: rotate(-41.71deg);
+}
+
+/* .container > .strip:hover{
+/*   border-radius: 50%; */
+/*   transform: scale(1.2) rotate(-900deg);
+  transition: 0.5s;
+  background: #A246DD; */
+ 
+
